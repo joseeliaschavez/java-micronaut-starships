@@ -2,6 +2,27 @@
 
 An example application that implements a Star Trek API to get information about Federation starships and their crew.
 
+## CLI Commands
+
+### Execute tests
+
+```bash
+./gradlew test
+````
+
+### Run the application
+
+```bash
+./gradlew run
+```
+
+### Compile to native image and execute
+
+```bash
+./gradlew nativeCompile
+./build/native/nativeCompile/mn-graalvm-application
+```
+
 ## Micronaut 4.4.3 Documentation
 
 - [User Guide](https://docs.micronaut.io/4.4.3/guide/index.html)
@@ -21,5 +42,3 @@ An example application that implements a Star Trek API to get information about 
 ## Feature serialization-jackson documentation
 
 - [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
-
-

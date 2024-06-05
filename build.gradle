@@ -29,8 +29,16 @@ java {
     targetCompatibility = JavaVersion.toVersion("17")
 }
 
+graalvmNative {
+    toolchainDetection = false
+    binaries {
+        main {
+            imageName.set('mn-graalvm-application')
+            buildArgs.add('--verbose')
+        }
+    }
+}
 
-graalvmNative.toolchainDetection = false
 micronaut {
     runtime("netty")
     testRuntime("junit5")
